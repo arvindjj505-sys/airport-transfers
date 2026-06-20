@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manor Lakes Airport Transfers | $100 Flat Rate</title>
+  <meta name="description" content="Reliable airport transfers from Manor Lakes. Flat rate $100 to Melbourne Airport (MEL) or Avalon Airport (AVV). Book online.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    body { background: #f8fafc; margin: 0; }
+
+    .navbar { background: #0a1628 !important; padding: 14px 0; }
+    .navbar-brand { color: #fff !important; font-weight: 700; font-size: 1.05em; }
+    .nav-book { background: #e8a020; color: #0a1628 !important; font-weight: 700;
+                border-radius: 20px; padding: 7px 22px !important; }
+    .nav-book:hover { background: #d4911a; }
+
+    .hero {
+      background: linear-gradient(135deg, #0a1628 0%, #1e3a5f 100%);
+      color: white;
+      padding: 90px 20px 80px;
+      text-align: center;
+    }
+    .hero h1 { font-size: clamp(1.8em, 5vw, 2.9em); font-weight: 800; margin-bottom: 14px; }
+    .hero .tagline { font-size: 1.15em; opacity: .85; margin-bottom: 6px; }
+    .hero .sub { font-size: 1em; opacity: .6; margin-bottom: 36px; }
+
+    .btn-hero {
+      background: #e8a020; color: #0a1628; font-weight: 700; font-size: 1.1em;
+      padding: 16px 52px; border-radius: 50px; text-decoration: none;
+      display: inline-block; transition: transform .2s, box-shadow .2s;
+      box-shadow: 0 4px 16px rgba(232,160,32,.45);
+    }
+    .btn-hero:hover { transform: translateY(-2px); box-shadow: 0 6px 22px rgba(232,160,32,.55); color: #0a1628; }
+
+    .price-badge {
+      background: #27ae60; color: #fff; font-size: 1.2em; font-weight: 700;
+      padding: 13px 36px; border-radius: 50px; display: inline-block;
+      box-shadow: 0 4px 14px rgba(39,174,96,.3);
+    }
+
+    .feature-card {
+      background: white; border-left: 4px solid #1e3a5f;
+      border-radius: 10px; padding: 28px 22px; text-align: center;
+      height: 100%; box-shadow: 0 2px 12px rgba(0,0,0,.06);
+      transition: transform .2s;
+    }
+    .feature-card:hover { transform: translateY(-4px); }
+    .feature-icon { font-size: 2.4em; margin-bottom: 12px; }
+    .feature-card h3 { color: #1e3a5f; font-size: 1.05em; font-weight: 700; margin-bottom: 8px; }
+    .feature-card p { color: #666; font-size: .88em; margin: 0; }
+
+    .step-num {
+      background: #eef2f8; border-radius: 50%; width: 56px; height: 56px;
+      line-height: 56px; font-size: 1.3em; font-weight: 700; color: #1e3a5f;
+      margin: 0 auto 12px;
+    }
+    .step-title { font-weight: 700; color: #1e3a5f; margin-bottom: 4px; }
+
+    .contact-bar {
+      background: #1e3a5f; color: white; padding: 28px;
+      border-radius: 10px; text-align: center;
+    }
+    .contact-bar a { color: #e8a020; text-decoration: none; font-weight: 600; }
+    .contact-bar a:hover { text-decoration: underline; }
+
+    footer { background: #0a1628; color: rgba(255,255,255,.55); text-align: center; padding: 20px; font-size: .83em; margin-top: 50px; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Manor Lakes Airport Transfers</a>
+    <div class="ms-auto">
+      <a href="book.html" class="nav-link nav-book">Book Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="container">
+    <h1>Manor Lakes Airport Transfers</h1>
+    <p class="tagline">Reliable, on-time airport transfers — every time.</p>
+    <p class="sub">Serving Manor Lakes &amp; surrounding suburbs, Victoria</p>
+    <a href="book.html" class="btn-hero">Book Your Transfer</a>
+  </div>
+</div>
+
+<div class="container py-5">
+
+  <!-- PRICE BADGE -->
+  <div class="text-center mb-5">
+    <span class="price-badge">Flat Rate: $100 &nbsp;— &nbsp;No Hidden Fees</span>
+  </div>
+
+  <!-- FEATURE CARDS -->
+  <div class="row g-4 mb-5">
+    <div class="col-md-4">
+      <div class="feature-card">
+        <div class="feature-icon">&#128336;</div>
+        <h3>Always On Time</h3>
+        <p>We monitor your flight and adjust pickup if your arrival changes.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="feature-card">
+        <div class="feature-icon">&#128664;</div>
+        <h3>Comfortable Ride</h3>
+        <p>Clean, air-conditioned vehicle for up to 6 passengers with luggage.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="feature-card">
+        <div class="feature-icon">&#128179;</div>
+        <h3>Pay on the Day</h3>
+        <p>Cash or bank transfer — no upfront payment required.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <div class="bg-white rounded-3 shadow-sm p-4 p-md-5 mb-5">
+    <h2 class="text-center fw-bold mb-4" style="color:#1e3a5f">How It Works</h2>
+    <div class="row text-center g-4">
+      <div class="col-6 col-md-3">
+        <div class="step-num">1</div>
+        <p class="step-title">Book Online</p>
+        <p class="text-muted small">Fill in your details in under 2 minutes.</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="step-num">2</div>
+        <p class="step-title">Get Confirmed</p>
+        <p class="text-muted small">Receive your booking reference by email instantly.</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="step-num">3</div>
+        <p class="step-title">We Pick You Up</p>
+        <p class="text-muted small">Your driver arrives at your door, right on time.</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="step-num">4</div>
+        <p class="step-title">Pay on Arrival</p>
+        <p class="text-muted small">Cash or bank transfer — simple and easy.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA BANNER -->
+  <div class="text-center mb-5 p-4" style="background:#1e3a5f;border-radius:12px">
+    <h3 class="text-white fw-bold mb-2">Ready to book your transfer?</h3>
+    <p class="text-white opacity-75 mb-4">Melbourne Airport or Avalon — we've got you covered.</p>
+    <a href="book.html" class="btn-hero" style="font-size:1em;padding:13px 42px">Book Now — $100 Flat Rate</a>
+  </div>
+
+  <!-- CONTACT BAR -->
+  <div class="contact-bar">
+    <p class="mb-1 fw-bold fs-5">Questions? We're here to help.</p>
+    <p class="mb-0">
+      Call / Text: <a href="tel:0449188872">0449 188 872</a>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      Email: <a href="mailto:arvind.jayanth5@gmail.com">arvind.jayanth5@gmail.com</a>
+    </p>
+  </div>
+
+</div>
+
+<footer>
+  <p class="mb-0">&copy; 2026 Manor Lakes Airport Transfers &nbsp;|&nbsp; Manor Lakes, VIC, Australia</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
