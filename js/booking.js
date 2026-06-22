@@ -85,8 +85,8 @@ document.getElementById('bookingForm').addEventListener('submit', async function
 
     // STEP 2: Send emails (non-critical — booking is saved regardless)
     const customerEmail = {
-        to_name:  fullName,
-        to_email: email,
+        to_name:    fullName,
+        cust_email: email,
         subject:  'Booking Confirmed — Ref: ' + bookingRef + ' | Manor Lakes Airport Transfers',
         message:
             'Dear ' + fullName + ',\n\n' +
@@ -109,8 +109,8 @@ document.getElementById('bookingForm').addEventListener('submit', async function
     };
 
     const adminEmail = {
-        to_name:  'Admin',
-        to_email: CONFIG.ADMIN_EMAIL,
+        to_name:     'Admin',
+        admin_email: CONFIG.ADMIN_EMAIL,
         subject:  'NEW BOOKING: ' + bookingRef + ' | ' + fullName,
         message:
             '=== NEW BOOKING RECEIVED ===\n\n' +
@@ -127,13 +127,13 @@ document.getElementById('bookingForm').addEventListener('submit', async function
     };
 
     try {
-        await emailjs.send(CONFIG.EMAILJS_SERVICE_ID, CONFIG.EMAILJS_TEMPLATE_ID, customerEmail);
+        await emailjs.send(CONFIG.EMAILJS_SERVICE_ID, CONFIG.EMAILJS_CUSTOMER_TEMPLATE_ID, customerEmail);
     } catch (e) {
         console.warn('Customer email failed:', e.text || e.message || e);
     }
 
     try {
-        await emailjs.send(CONFIG.EMAILJS_SERVICE_ID, CONFIG.EMAILJS_TEMPLATE_ID, adminEmail);
+        await emailjs.send(CONFIG.EMAILJS_SERVICE_ID, CONFIG.EMAILJS_ADMIN_TEMPLATE_ID, adminEmail);
     } catch (e) {
         console.warn('Admin email failed:', e.text || e.message || e);
     }
